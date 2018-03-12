@@ -34,8 +34,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //        intent.setComponent(componentName);
 //        startActivity(intent);
 
-        //Action
-        Intent intent = new Intent();
+        //Actiond
+        Intent intent = new Intent();// dajkd
         intent.setAction(MainActivity.CRAZZY_ACTION);
         startActivity(intent);
     }
