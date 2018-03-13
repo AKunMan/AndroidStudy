@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public final static String CRAZZY_ACTION = "org.crazyit.intent.action.CRAZYIT_ACTION";
     TextView textView;
+    String[] strings;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +23,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button btn = (Button)findViewById(R.id.main_at_btn);
         textView = (TextView)findViewById(R.id.main_act_textView);
         btn.setOnClickListener(this);
+
+        //获取资源数组的数据
+//        strings = getResources().getStringArray(R.array.string_normal);
     }
 
     @Override

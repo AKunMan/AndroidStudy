@@ -3,4 +3,25 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <!--机器人项目颜色-->
+    <color name="green">#04C073</color>
+    <color name="blue">#37b9bc</color>
+    <color name="gray">#404040</color>
+    <color name="gray_light">#cccccc</color>
+    <color name="gray_tip">#999999</color>
+    <color name="red">#ff0000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="checkgray">#AAAAAA</color>
+    <color name="lowred">#FF7878</color>
+    <color name="higherorange">#F39800</color>
+    <color name="highorange">#FCD522</color>
+    <color name="transblack">#B2000000</color>
+    <color name="black">#000000</color>
+    <color name="transwhite">#99FFFFFF</color>
+    <color name="saverfontcolor">#2B5613</color>
+    <color name="saverlinecolor">#64A341</color>
+    <color name="text_black">#333333</color>
+    <color name="gray_f1">#F1F1F1</color>
+    <color name="divider_line">#e1e0e0</color>
+    <color name="gray_e6e6e6">#e6e6e6</color>
 </resources>
