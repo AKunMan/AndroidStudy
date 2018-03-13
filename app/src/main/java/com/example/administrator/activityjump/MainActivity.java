@@ -6,16 +6,20 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     public final static String CRAZZY_ACTION = "org.crazyit.intent.action.CRAZYIT_ACTION";
+    TextView textView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         Button btn = (Button)findViewById(R.id.main_at_btn);
+        textView = (TextView)findViewById(R.id.main_act_textView);
         btn.setOnClickListener(this);
     }
 
@@ -35,8 +39,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //        startActivity(intent);
 
         //Actiond
-        Intent intent = new Intent();
-        intent.setAction(MainActivity.CRAZZY_ACTION);
+//        Intent intent = new Intent();
+//        intent.setAction(MainActivity.CRAZZY_ACTION);
+//        startActivity(intent);
+
+        //回调机制
+        Intent intent = new Intent(MainActivity.this,CallBackActivity.class);
         startActivity(intent);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == 0){
+            Bundle bundle = data.getExtras();
+            String titleName = bundle.getString("callBack");
+            textView.setText(titleName);
+        }
     }
 }
