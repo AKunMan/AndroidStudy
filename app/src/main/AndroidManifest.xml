@@ -18,11 +18,13 @@
         </activity>
         <activity android:name=".SecondActivity">
             <intent-filter>
-                <action android:name="org.crazyit.intent.action.CRAZYIT_ACTION"/>
-                <action android:name="helloword"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="org.crazyit.intent.action.CRAZYIT_ACTION" />
+                <action android:name="helloword" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity android:name=".CallBackActivity"></activity>
     </application>
 
 </manifest>
