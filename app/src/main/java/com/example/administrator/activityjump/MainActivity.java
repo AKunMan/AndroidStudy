@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -45,14 +46,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         //回调机制
         Intent intent = new Intent(MainActivity.this,CallBackActivity.class);
-        startActivity(intent);
+        startActivityForResult(intent,1);
     }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (requestCode == 0){
+        if (requestCode == 1){
             Bundle bundle = data.getExtras();
             String titleName = bundle.getString("callBack");
+            Toast.makeText(MainActivity.this,titleName,Toast.LENGTH_SHORT).show();
             textView.setText(titleName);
         }
     }

@@ -23,7 +23,7 @@ public class CallBackActivity extends AppCompatActivity implements View.OnClickL
         Bundle data = new Bundle();
         data.putString("callBack","回调返回");
         intent.putExtras(data);
-        CallBackActivity.this.setResult(0,intent);
+        CallBackActivity.this.setResult(1,intent);
         CallBackActivity.this.finish();
     }
 }
