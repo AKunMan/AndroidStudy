@@ -24,7 +24,8 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".CallBackActivity"></activity>
+        <activity android:name=".CallBackActivity" />
+        <activity android:name=".RecyclerViewActivity"></activity>
     </application>
 
 </manifest>

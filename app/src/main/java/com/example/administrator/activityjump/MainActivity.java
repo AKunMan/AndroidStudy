@@ -49,8 +49,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //        startActivity(intent);
 
         //回调机制
-        Intent intent = new Intent(MainActivity.this,CallBackActivity.class);
-        startActivityForResult(intent,1);
+//        Intent intent = new Intent(MainActivity.this,CallBackActivity.class);
+//        startActivityForResult(intent,1);
+
+        //RecylerViewTest
+        startActivity(new Intent(MainActivity.this,RecyclerViewActivity.class));
     }
 
     @Override
