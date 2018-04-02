@@ -13,20 +13,14 @@
         </activity>
         <activity android:name=".SecondActivity">
             <intent-filter>
-                <action android:name="org.crazyit.intent.action.CRAZYIT_ACTION" />
-                <action android:name="helloword" />
+                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".CallBackActivity" />
         <activity android:name=".RecyclerViewActivity" />
         <activity android:name=".HttpTestActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 
