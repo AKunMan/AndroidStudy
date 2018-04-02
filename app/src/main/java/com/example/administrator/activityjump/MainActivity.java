@@ -53,7 +53,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //        startActivityForResult(intent,1);
 
         //RecylerViewTest
-        startActivity(new Intent(MainActivity.this,RecyclerViewActivity.class));
+//        startActivity(new Intent(MainActivity.this,RecyclerViewActivity.class));
+
+        //httpTest
+        startActivity(new Intent(MainActivity.this,HttpTestActivity.class));
     }
 
     @Override
